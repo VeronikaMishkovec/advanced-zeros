@@ -14,23 +14,33 @@ module.exports = function getZerosCount(number, base) {
     }
 
     if (base % 2 == 0) {
-        while (base % 2 == 0) {
+        while (base % 2 == 0 && base != 2) {
             base /= 2;
         }
     }
     if (base % 3 == 0) {
-        while (base % 3 == 0) {
+        while (base % 3 == 0 && base != 3) {
             base /= 3;
         }
     }
     if (base % 5 == 0) {
-        while (base % 5 == 0) {
+        while (base % 5 == 0 && base != 5) {
             base /= 5;
         }
     }
     if (base % 7 == 0) {
-        while (base % 7 == 0) {
+        while (base % 7 == 0 && base != 7) {
             base /= 7;
+        }
+    }
+    if (base % 11 == 0) {
+        while (base % 11 == 0 && base != 11) {
+            base /= 11;
+        }
+    }
+    if (base % 13 == 0) {
+        while (base % 13 == 0 && base != 13) {
+            base /= 13;
         }
     }
     for (var i = 0; i <= simpleNumb.length; i++) {
