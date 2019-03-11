@@ -1,3 +1,38 @@
 module.exports = function getZerosCount(number, base) {
-  // your implementation
+    // your implementation
+    var simpleNumb = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251]
+
+    function getZerosCount(number, base) {
+        var res = 0;
+        var j = 1;
+        for (var i = 0; i <= simpleNumb.length; i++) {
+            if (base == simpleNumb[i]) {
+                while (Math.pow(simpleNumb[i], j) < number) {
+                    res += Math.floor(number / Math.pow(simpleNumb[i], j));
+                    j++;
+                }
+            }
+
+        }
+
+        /*if (base % 2 == 0) {
+            while (base % 2 == 0) {
+                base /= 2;
+            }
+            while (base % 3 == 0) {
+                base /= 3;
+            }
+            for (var i = 0; i <= simpleNumb.length; i++) {
+                if (base == simpleNumb[i]) {
+                    while (Math.pow(simpleNumb[i], j)<number) {
+                        res += Math.floor(number/Math.pow(simpleNumb[i], j));
+                        j++;
+                    }
+                }
+            }
+        }*/
+
+        return res;
+    }
+    document.write('nulls =' + getZerosCount(71398757, 12));
 }
