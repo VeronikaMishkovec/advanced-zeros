@@ -34,5 +34,4 @@ module.exports = function getZerosCount(number, base) {
 
         return res;
     }
-    document.write('nulls =' + getZerosCount(71398757, 12));
 }
