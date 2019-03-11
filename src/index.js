@@ -1,6 +1,6 @@
 module.exports = function getZerosCount(number, base) {
     // your implementation
-    var simpleNumb = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251]
+    var simpleNumb = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251];
     var res = 0;
     var j = 1;
     for (var i = 0; i <= simpleNumb.length; i++) {
@@ -12,37 +12,37 @@ module.exports = function getZerosCount(number, base) {
         }
 
     }
-    var buffer2 == base;
+    var buffer2 = base;
     if (base % 2 == 0) {
         while (base % 2 == 0 && base != 2) {
             base /= 2;
         }
     }
-    var buffer3 == base;
+    var buffer3 = base;
     if (base % 3 == 0) {
         while (base % 3 == 0 && base != 3) {
             base /= 3;
         }
     }
-    var buffer5 == base;
+    var buffer5 = base;
     if (base % 5 == 0) {
         while (base % 5 == 0 && base != 5) {
             base /= 5;
         }
     }
-    var buffer7 == base;
+    var buffer7 = base;
     if (base % 7 == 0) {
         while (base % 7 == 0 && base != 7) {
             base /= 7;
         }
     }
-    var buffer11 == base;
+    var buffer11 = base;
     if (base % 11 == 0) {
         while (base % 11 == 0 && base != 11) {
             base /= 11;
         }
     }
-    var buffer13 == base;
+    var buffer13 = base;
     if (base % 13 == 0) {
         while (base % 13 == 0 && base != 13) {
             base /= 13;
