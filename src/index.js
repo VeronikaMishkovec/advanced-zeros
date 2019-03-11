@@ -13,22 +13,30 @@ module.exports = function getZerosCount(number, base) {
 
     }
 
-    /*if (base % 2 == 0) {
+    if (base % 2 == 0) {
         while (base % 2 == 0) {
             base /= 2;
         }
+    }
+    if (base % 3 == 0) {
         while (base % 3 == 0) {
             base /= 3;
         }
-        for (var i = 0; i <= simpleNumb.length; i++) {
-            if (base == simpleNumb[i]) {
-                while (Math.pow(simpleNumb[i], j)<number) {
-                    res += Math.floor(number/Math.pow(simpleNumb[i], j));
-                    j++;
-                }
+    }
+    if (base % 5 == 0) {
+        while (base % 5 == 0) {
+            base /= 5;
+        }
+    }
+    for (var i = 0; i <= simpleNumb.length; i++) {
+        if (base == simpleNumb[i]) {
+            while (Math.pow(simpleNumb[i], j) < number) {
+                res += Math.floor(number / Math.pow(simpleNumb[i], j));
+                j++;
             }
         }
-    }*/
+    }
+
 
     return res;
 }
