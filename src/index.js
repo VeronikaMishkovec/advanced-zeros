@@ -99,5 +99,5 @@ module.exports = function getZerosCount(number, base) {
     if (base == 13) {
         res = getBasePow(buffer13, base, res);
     }
-    return res;
+    return Math.floor(res);
 }
