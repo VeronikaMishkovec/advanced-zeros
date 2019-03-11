@@ -12,32 +12,37 @@ module.exports = function getZerosCount(number, base) {
         }
 
     }
-
+    var buffer2 == base;
     if (base % 2 == 0) {
         while (base % 2 == 0 && base != 2) {
             base /= 2;
         }
     }
+    var buffer3 == base;
     if (base % 3 == 0) {
         while (base % 3 == 0 && base != 3) {
             base /= 3;
         }
     }
+    var buffer5 == base;
     if (base % 5 == 0) {
         while (base % 5 == 0 && base != 5) {
             base /= 5;
         }
     }
+    var buffer7 == base;
     if (base % 7 == 0) {
         while (base % 7 == 0 && base != 7) {
             base /= 7;
         }
     }
+    var buffer11 == base;
     if (base % 11 == 0) {
         while (base % 11 == 0 && base != 11) {
             base /= 11;
         }
     }
+    var buffer13 == base;
     if (base % 13 == 0) {
         while (base % 13 == 0 && base != 13) {
             base /= 13;
@@ -52,6 +57,47 @@ module.exports = function getZerosCount(number, base) {
         }
     }
 
-
+    function getBasePow(buffer, base, res) {
+        if (buffer == Math.pow(base, 2)) {
+            res /= 2;
+        }
+        if (buffer == Math.pow(base, 3)) {
+            res /= 3;
+        }
+        if (buffer == Math.pow(base, 4)) {
+            res /= 4;
+        }
+        if (buffer == Math.pow(base, 5)) {
+            res /= 5;
+        }
+        if (buffer == Math.pow(base, 6)) {
+            res /= 6;
+        }
+        if (buffer == Math.pow(base, 7)) {
+            res /= 7;
+        }
+        if (buffer == Math.pow(base, 8)) {
+            res /= 8;
+        }
+        return res;
+    }
+    if (base == 2) {
+        res = getBasePow(buffer2, base, res);
+    }
+    if (base == 3) {
+        res = getBasePow(buffer3, base, res);
+    }
+    if (base == 5) {
+        res = getBasePow(buffer5, base, res);
+    }
+    if (base == 7) {
+        res = getBasePow(buffer7, base, res);
+    }
+    if (base == 11) {
+        res = getBasePow(buffer11, base, res);
+    }
+    if (base == 13) {
+        res = getBasePow(buffer13, base, res);
+    }
     return res;
 }
