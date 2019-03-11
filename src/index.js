@@ -28,6 +28,11 @@ module.exports = function getZerosCount(number, base) {
             base /= 5;
         }
     }
+    if (base % 7 == 0) {
+        while (base % 7 == 0) {
+            base /= 7;
+        }
+    }
     for (var i = 0; i <= simpleNumb.length; i++) {
         if (base == simpleNumb[i]) {
             while (Math.pow(simpleNumb[i], j) < number) {
